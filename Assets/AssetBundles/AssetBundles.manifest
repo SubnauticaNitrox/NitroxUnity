@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 3157173744
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: chatlog
+      Dependencies: {}
