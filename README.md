@@ -11,12 +11,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Unity 5.6 <a href="https://unity3d.com/get-unity/download/archive">
+<a href="https://unity3d.com/get-unity/download/archive">Unity 5.6 
 
 Visual Studio 2017
 
-Please follow this guide to make sure its setup to work with Unity. 
 <a href="https://docs.microsoft.com/en-us/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2017">
+Please follow this guide to make sure its setup to work with Unity. 
+
 
 ### Installing and Setup
 
