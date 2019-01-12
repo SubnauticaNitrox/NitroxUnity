@@ -9,16 +9,11 @@ namespace Assets.Editor
         private static void BuildAllAssetBundles()
         {
             var assetBundleDirectory = "Assets/AssetBundles";
-            try
+            if (Directory.Exists(assetBundleDirectory))
             {
                 Directory.Delete(assetBundleDirectory, true);
             }
-            catch (IOException)
-            {
-                //Cleared directory of previous asset build
-            }
             Directory.CreateDirectory(assetBundleDirectory);
-
             BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.None,
                 BuildTarget.StandaloneWindows);
         }
