@@ -34,3 +34,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Nitrox Builded Files
+Assets/AssetBundles/
+Assets/AssetBundles.meta
