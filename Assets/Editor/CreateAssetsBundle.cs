@@ -1,16 +1,19 @@
 ﻿using System.IO;
 using UnityEditor;
 
-public class CreateAssetBundles
+namespace Assets.Editor
 {
-    [MenuItem("Assets/Build AssetBundles")]
-    static void BuildAllAssetBundles()
+    public class CreateAssetBundles
     {
-        string assetBundleDirectory = "Assets/AssetBundles";
-        if (!Directory.Exists(assetBundleDirectory))
-{
+        [MenuItem("Assets/Build AssetBundles")]
+        private static void BuildAllAssetBundles()
+        {
+            var assetBundleDirectory = "Assets/AssetBundles";
+            Directory.Delete(assetBundleDirectory, true);
             Directory.CreateDirectory(assetBundleDirectory);
+
+            BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.None,
+                BuildTarget.StandaloneWindows);
         }
-        BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows);
     }
 }
